@@ -30,7 +30,7 @@ This project demonstrates how to connect third-party APIs inside n8n, handle API
 
 ## 🖼️ Workflow & Output Screenshots
 ### 1. n8n Workflow Architecture
-![Workflow Architecture](./workflow.png)
+![Workflow Architecture](./Workflow.png)
 
 ---
 
