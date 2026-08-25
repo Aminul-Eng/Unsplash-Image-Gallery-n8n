@@ -1,11 +1,41 @@
-আমার 2nd Assignment সফলভাবে সম্পন্ন করলাম। 🎉
-এই প্রজেক্টে যা করেছি:
-✅ Unsplash Developer Portal-এ Application তৈরি করেছি।
-✅ API Key (Access Key) সংগ্রহ করে Authentication শিখেছি।
-✅ n8n-এ Webhook তৈরি করে URL Query Parameter (?q=coffee) গ্রহণ করেছি।
-✅ HTTP Request Node ব্যবহার করে Unsplash REST API-তে Request পাঠিয়েছি।
-✅ API থেকে JSON Response সংগ্রহ করে প্রয়োজনীয় ডেটা প্রসেস করেছি।
-✅ Edit Fields Node দিয়ে Image URL ও Description সাজিয়েছি।
-✅ Respond to Webhook Node ব্যবহার করে Dynamic Image Gallery ব্রাউজারে দেখিয়েছি।
-🔑 আজকের শেখা:
-Third-party API Integration, API Authentication, REST API, Webhook, Query Parameters, JSON Processing এবং Dynamic Response Rendering।
+# Dynamic Unsplash Image Gallery via n8n 📸✨
+
+An automated workflow built with **n8n** that accepts query parameters via a Webhook, fetches high-quality images from the **Unsplash REST API** using proper authentication, processes the JSON response, and renders a dynamic image gallery directly in the browser.
+
+## 🚀 Project Overview
+This project demonstrates how to connect third-party APIs inside n8n, handle API authentication using Access Keys, process complex JSON payloads, and respond dynamically to web requests.
+
+## ✨ Features & What I Learned
+- **API Integration & Auth:** Created an application in Unsplash Developer Portal and utilized API Keys (Access Keys) for secure authentication.
+- **Webhook Trigger:** Configured an n8n Webhook to accept dynamic URL Query Parameters (e.g., `?q=coffee`).
+- **REST API Request:** Used HTTP Request nodes to communicate with Unsplash REST endpoints.
+- **Data Processing:** Processed and extracted essential data (Image URLs and Descriptions) from the JSON response using Edit Fields nodes.
+- **Dynamic Response Rendering:** Used the Respond to Webhook node to present a fully formatted, dynamic image gallery directly in the browser.
+
+---
+
+## 🛠️ Tech Stack
+* **n8n:** Low-code automation and workflow orchestration.
+* **Unsplash API:** For fetching real-time image data and assets.
+* **Webhooks & REST APIs:** For triggering and handling HTTP requests/responses.
+
+---
+
+## 🔑 How to Configure Unsplash API
+1. Log in to your [Unsplash Developer Portal](https://unsplash.com/developers).
+2. Register a new application and grab your **Access Key**.
+3. In n8n, use an HTTP Request node with Header Authentication (`Client-ID YOUR_ACCESS_KEY`).
+
+---
+
+## 🖼️ Workflow & Output Screenshots
+### 1. n8n Workflow Architecture
+![Workflow Architecture](./workflow.png)
+
+---
+
+## 🚀 How to Use
+1. Download the `workflow.json` file from this repository.
+2. Import it into your n8n workspace.
+3. Configure your Unsplash API Access Key credentials.
+4. Activate the webhook URL and test it in your browser with a query parameter (e.g., `your-webhook-url?q=nature`).
